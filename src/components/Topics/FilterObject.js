@@ -38,10 +38,10 @@ class FilterObject extends Component{
         let newArr = [];
         for (let i = 0; i<len; i++){
             let sub = arr[i];
-            console.log(arr[i][prop])
-            // if (sub.includes(prop)===true){
-            //     newArr.push(sub)
-            // }
+            // console.log(arr[i][prop])
+            if (prop in sub){
+                newArr.push(sub)
+            }
         }
         this.setState({filteredArray: newArr})
         // console.log(sub)
