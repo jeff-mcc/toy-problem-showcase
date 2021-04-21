@@ -28,7 +28,7 @@ class Sum extends Component{
         let num1 = this.state.number1;
         let num2 = this.state.number2;
         // console.log(num2)
-        let ans = parseInt(num1)+parseInt(num2);
+        let ans = parseInt(num1,10)+parseInt(num2,10);
         return this.setState({sum: ans})
     }
 
